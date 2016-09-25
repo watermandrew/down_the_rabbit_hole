@@ -10,4 +10,6 @@
 OR... Drag and drop directory live into chrome://extensions/
 
 ##Working Features:
-- Plugin only clickable when Facebook tab is active
+- Cannot click Like Comment or Share 
+- Cannot click Like on comments
+- Hover on these areas is a "not-allowed" cursor
