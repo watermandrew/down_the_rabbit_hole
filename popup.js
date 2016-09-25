@@ -6,7 +6,7 @@ var icon = 0;
       if (chrome.runtime.lastError) {
         message.innerText = 'Sorry! Stealth mode cannot be enabled on this page.';
       } else {
-        message.innerText = 'Stealth mode enabled!';
+        message.innerText = 'Stealth mode enabled! Refresh the page to disable';
 
         function iconSwap() {
           if (icon == 1) {
@@ -14,7 +14,6 @@ var icon = 0;
           icon = 0;
         }
         else {
-          console.log("poo");
           chrome.browserAction.setIcon({path: "greenIcon.png"});
           icon = 1;
         }
