@@ -6,7 +6,8 @@
 
   "content_scripts" : [
     {
-    "js" : "fb.js"
+    "matches" : ["http://*/*"],
+    "js" : ["fb.js"]
   }
 ],
 
