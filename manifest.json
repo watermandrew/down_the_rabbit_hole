@@ -1,24 +1,18 @@
 {
-  "manifest_version": 2,
-  "name": "StalkerMode",
+  "name": "Down the Rabbit Hole",
+  "description": "Activate stealth mode: Prevent accidental likes on Facebook",
   "version": "1.0",
-
-
-  "content_scripts" : [
-    {
-    "matches" : ["http://*/*"],
-    "js" : ["fb.js"]
-  }
-],
-
-  "page_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
 
   "permissions": [
     "activeTab",
-    "declarativeContent",
-    "https://ajax.googleapis.com/"
-  ]
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Down the Rabbit Hole",
+    "default_popup": "popup.html"
+  },
+
+  "manifest_version": 2
 }
