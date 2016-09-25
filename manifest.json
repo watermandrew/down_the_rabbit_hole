@@ -3,12 +3,21 @@
   "name": "StalkerMode",
   "version": "1.0",
 
-  "browser_action": {
+
+  "content_scripts" : [
+    {
+    "js" : "fb.js"
+  }
+],
+
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
   "permissions": [
     "activeTab",
+    "declarativeContent",
     "https://ajax.googleapis.com/"
   ]
 }
